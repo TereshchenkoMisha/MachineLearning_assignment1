@@ -84,6 +84,7 @@ In Streamlit you can drag the sliders and push button "Predict" to get predictio
 # MlFlow results
 You can use this commands to see the charts and metrics logged by MLFlow
 ```bash
+$env:MLFLOW_ALLOW_FILE_STORE="true"; mlflow ui --backend-store-uri ./mlruns
 pip install mlflow
 mlflow ui --backend-store-uri ./mlruns
 ```
