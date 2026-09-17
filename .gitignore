@@ -1,0 +1,62 @@
+# ---------- Python ----------
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+build/
+dist/
+*.egg-info/
+.eggs/
+
+# ---------- Virtual environments ----------
+.venv/
+venv/
+env/
+ENV/
+
+# ---------- Data (raw и processed не пушим) ----------
+data/raw/*.csv
+data/raw/*.parquet
+data/raw/*.zip
+data/processed/*.csv
+data/processed/*.parquet
+
+# ---------- Models (большие бинарники) ----------
+models/*.pkl
+models/*.joblib
+models/*.h5
+models/*.pt
+models/*.onnx
+
+# ---------- MLflow ----------
+mlruns/
+mlartifacts/
+mlflow.db
+
+# ---------- Airflow ----------
+airflow/logs/
+airflow/plugins/
+airflow/config/
+airflow/*.pid
+airflow/*.err
+airflow/webserver_config.py
+airflow/.env
+
+# ---------- Jupyter ----------
+.ipynb_checkpoints/
+*.ipynb_checkpoints
+
+# ---------- IDE ----------
+.idea/
+.vscode/
+*.swp
+*.swo
+
+# ---------- OS ----------
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# ---------- Docker ----------
+*.log
