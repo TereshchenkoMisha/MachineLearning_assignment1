@@ -60,7 +60,7 @@ cd ./MachineLearning_assignment1
 ```
 ### 2. Then you should prepare the environment
 download the dataset and add it to the data/raw/dataset.csv
-Add the airwlof/.env liens: AIRFLOW_UID = 50000
+Add the airwlof/.env liens: AIRFLOW_UID = 0
 ### 3. Then start Airflow
 ```bash
 cd ./airflow
