@@ -34,7 +34,7 @@ Automated MLOps pipeline for Spotify music genre classification. The pipeline co
 
 **Spotify Tracks Dataset** (114,000 tracks, 125 genres).
 
-Download from: https://www.kaggle.com/datasets/maharshipandya/-spotify-tracks-dataset
+Download from: https://huggingface.co/datasets/maharshipandya/spotify-tracks-dataset/tree/main
 
 After downloading, place the file at:
 
