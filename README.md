@@ -5,26 +5,26 @@ Automated MLOps pipeline for Spotify music genre classification. The pipeline co
 ## Repository Structure
 . <br>
 ├── code/ <br>
-│ ├── config.py # Common constants (paths, features, hyperparameters) <br>
-│ ├── datasets/preprocess.py # Stage 1: loading, cleaning, splitting <br>
-│ ├── models/train.py # Stage 2: feature engineering, training, MLflow, saving <br>
-│ └── deployment/ <br>
-│ ├── docker-compose.yaml # API + Streamlit <br>
-│ ├── api/ # FastAPI service <br>
-│ │ ├── main.py <br>
-│ │ └── Dockerfile <br>
-│ └── app/ # Streamlit application <br>
-│ ├── main.py <br>
-│ └── Dockerfile <br>
+│   ├── config.py # Common constants (paths, features, hyperparameters) <br>
+│   ├── datasets/preprocess.py # Stage 1: loading, cleaning, splitting <br>
+│   ├── models/train.py # Stage 2: feature engineering, training, MLflow, saving <br>
+│   └── deployment/ <br>
+│     ├── docker-compose.yaml # API + Streamlit <br>
+│     ├── api/ # FastAPI service <br>
+│     │ ├── main.py <br>
+│     │ └── Dockerfile <br>
+│     └── app/ # Streamlit application <br>
+│         ├── main.py <br>
+│         └── Dockerfile <br>
 ├── data/ <br>
-│ ├── raw/dataset.csv # Raw dataset (not in git) <br>
-│ └── processed/ # train.csv / test.csv (created automatically) <br>
+│   ├── raw/dataset.csv # Raw dataset (not in git) <br>
+│   └── processed/ # train.csv / test.csv (created automatically) <br>
 ├── models/ # spotify_model.pkl (created automatically) <br>
 ├── airflow/ <br>
-│ ├── Dockerfile # Custom Airflow image (includes catboost, mlflow, docker CLI) <br>
-│ ├── docker-compose.yaml # Postgres + scheduler + webserver <br>
-│ ├── requirements.txt <br>
-│ └── dags/pipeline_dag.py # DAG spotify_genre_pipeline <br>
+│   ├── Dockerfile # Custom Airflow image (includes catboost, mlflow, docker CLI) <br>
+│   ├── docker-compose.yaml # Postgres + scheduler + webserver <br>
+│   ├── requirements.txt <br>
+│   └── dags/pipeline_dag.py # DAG spotify_genre_pipeline <br>
 └── requirements.txt # General dependencies <br>
 <br>
 
