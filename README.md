@@ -4,29 +4,29 @@ Automated MLOps pipeline for Spotify music genre classification. The pipeline co
 
 ## Repository 
 ```text
-. <br>
-├── code/ <br>
-│    ├── config.py # Common constants (paths, features, hyperparameters) <br>
-│ &emsp ├── datasets/preprocess.py # Stage 1: loading, cleaning, splitting <br>
-│ &emsp ├── models/train.py # Stage 2: feature engineering, training, MLflow, saving <br>
-│ &emsp└── deployment/ <br>
-│ &emsp ├── docker-compose.yaml # API + Streamlit <br>
-│ &emsp ├── api/ # FastAPI service <br>
-│ &emsp &emsp│ ├── main.py <br>
-│ &emsp &emsp │ └── Dockerfile <br>
-│ &emsp └── app/ # Streamlit application <br>
-│ &emsp &emsp &emsp├── main.py <br>
-│ &emsp &emsp &emsp└── Dockerfile <br>
-├── data/ <br>
-│ &emsp ├── raw/dataset.csv # Raw dataset (not in git) <br>
-│ &emsp └── processed/ # train.csv / test.csv (created automatically) <br>
-├── models/ # spotify_model.pkl (created automatically) <br>
-├── airflow/ <br>
-│ &emsp ├── Dockerfile # Custom Airflow image (includes catboost, mlflow, docker CLI) <br>
-│ &emsp ├── docker-compose.yaml # Postgres + scheduler + webserver <br>
-│ &emsp ├── requirements.txt <br>
-│ &emsp └── dags/pipeline_dag.py # DAG spotify_genre_pipeline <br>
-└── requirements.txt # General dependencies <br>
+.
+├── code/
+│    ├── config.py # Common constants (paths, features, hyperparameters)
+│    ├── datasets/preprocess.py # Stage 1: loading, cleaning, splitting
+│    ├── models/train.py # Stage 2: feature engineering, training, MLflow, saving
+│    └── deployment/
+│        ├── docker-compose.yaml # API + Streamlit
+│        ├── api/ # FastAPI service
+│        │ ├── main.py
+│        │ └── Dockerfile
+│        └── app/ # Streamlit application
+│            ├── main.py
+│            └── Dockerfile
+├── data/
+│    ├── raw/dataset.csv # Raw dataset (not in git)
+│    └── processed/ # train.csv / test.csv (created automatically)
+├── models/ # spotify_model.pkl (created automatically)
+├── airflow/
+│    ├── Dockerfile # Custom Airflow image (includes catboost, mlflow, docker CLI)
+│    ├── docker-compose.yaml # Postgres + scheduler + webserver
+│    ├── requirements.txt
+│    └── dags/pipeline_dag.py # DAG spotify_genre_pipeline
+└── requirements.txt # General dependencies
 ```
 <br>
 
