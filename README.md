@@ -3,7 +3,7 @@
 Automated MLOps pipeline for Spotify music genre classification. The pipeline consists of three stages (data engineering, model engineering, deployment) orchestrated by Apache Airflow and scheduled to run every 10 minutes <br>
 
 ## Repository Structure
-.
+. <br>
 ├── code/ <br>
 │ ├── config.py # Common constants (paths, features, hyperparameters) <br>
 │ ├── datasets/preprocess.py # Stage 1: loading, cleaning, splitting <br>
