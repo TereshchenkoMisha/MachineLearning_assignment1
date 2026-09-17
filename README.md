@@ -2,10 +2,11 @@
 
 Automated MLOps pipeline for Spotify music genre classification. The pipeline consists of three stages (data engineering, model engineering, deployment) orchestrated by Apache Airflow and scheduled to run every 10 minutes <br>
 
-## Repository Structure
+## Repository 
+```text
 . <br>
 ├── code/ <br>
-│ &emsp ├── config.py # Common constants (paths, features, hyperparameters) <br>
+│    ├── config.py # Common constants (paths, features, hyperparameters) <br>
 │ &emsp ├── datasets/preprocess.py # Stage 1: loading, cleaning, splitting <br>
 │ &emsp ├── models/train.py # Stage 2: feature engineering, training, MLflow, saving <br>
 │ &emsp└── deployment/ <br>
@@ -26,6 +27,7 @@ Automated MLOps pipeline for Spotify music genre classification. The pipeline co
 │ &emsp ├── requirements.txt <br>
 │ &emsp └── dags/pipeline_dag.py # DAG spotify_genre_pipeline <br>
 └── requirements.txt # General dependencies <br>
+```
 <br>
 
 ## Dataset
